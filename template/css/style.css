@@ -1,0 +1,236 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 16.2px;
+}
+#navUl{
+ width: 55%;
+ display:flex;
+ list-style: none;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+nav{
+  display:flex;
+  align-content: center;
+  justify-content: space-evenly;
+  margin:0 4%;
+}
+#navSpan{
+  width: 13%;
+  font-family: 'Beau Rivage', cursive,'Lato','sans-serif';
+  margin:auto 0 auto 0;
+  font-size: 1.9rem;
+}
+nav a{
+  height: 50%;
+  font-size: .8rem;
+  margin:auto 0;
+  width: 10%;
+  color:black;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif; 
+}
+#siteSearch{
+  height: 1.5rem;
+  width: 7%;
+  margin:auto 5% auto 0;
+  justify-content: left;
+  font-size: .8rem;
+  font-weight: bold;
+}
+.navLi{
+  max-width: 100%;
+  font-size:.7rem;
+  /*border: .1rem solid green;*/
+  margin: auto 1%;
+}
+main{background: url("https://placebeard.it/1600/900") no-repeat;
+  background-size: auto;
+  border: 2px dashed #9799a7;
+  height: 50%;
+  width: 100%;}
+*main{
+  border: .25rem solid green;
+}
+#home{margin-left:15%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#firstVisit{
+  /*border: .25rem black solid;*/
+  background-color: black;
+  color: white;
+  width: 30%;
+  height: auto;
+  margin: 10% 0 0 0;
+  padding: 4%;
+}
+.bookButton{
+  background-color: rgb(0, 0, 0);
+  color:rgb(250, 246, 246);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3%;
+}
+#firstVisit a{
+  background-color: white;
+  color: black;
+  margin: 8% 23% 10% 0;
+
+}
+#hours{
+  color: white;
+  border: .25rem black solid;
+  align-self:flex-end;
+  transform: rotate(90deg);
+}
+#mainServices{
+  border: .25rem black solid;
+  background-color: black;
+  color: white;
+  padding:1%;
+}
+main h1,h3,footer{  border: .25rem black solid;
+}
+#bNH{
+  color: aliceblue;
+  font-size: 3rem;
+  
+
+  
+
+}
+.homeHead1{
+  margin: 0 auto;
+}
+.homeHead{
+  color:white;
+  font-size:1rem;
+  margin-bottom: 4%
+}
+.bighome{
+  margin:;
+}
+.services{
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  text-align: center;
+  margin:0 20%
+}
+.service{
+  margin:0 10%
+}
+#MakeMoves{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(194, 241, 241, 0.642);
+  align-items: center;
+  padding: 2% 10%;
+  
+}
+  /******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+#adMidPage{
+  
+  background: url("https://placebeard.it/200/400") no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #9799a7;
+  width: 100%;
+  height: 30rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.momentum{
+  width:50%;
+  padding: 2%;
+  margin:0% 2%
+}
+#stylests3{
+  display: flex;
+  justify-content: center;
+  padding: 5% 10%;
+
+}
+.stylist{
+  width: 40%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.stylist img{
+  display: inline-block;
+}
+.namePlate{
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  padding: 4% ;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#lookBook img{
+  float:left
+
+}
+.lookBookSquare{
+  height: 25%;
+  width: auto;
+}
+.lookBookLong{
+  height: 75%;
+  width: auto;
+}
+footer>h3{
+  text-align: center;
+  font-weight: 3rem;
+
+}
