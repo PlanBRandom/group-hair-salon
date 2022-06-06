@@ -19,6 +19,8 @@
 body{
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 /******************************************
 /* BASE STYLES
@@ -37,10 +39,12 @@ html {
 }
 
 nav{
-  display:flex;
+  display:
+  flex;
   align-content: center;
   justify-content: space-evenly;
   margin:0 4%;
+  width: 100%;
 }
 #navSpan{
   width: 13%;
@@ -72,10 +76,10 @@ nav a{
   /*border: .1rem solid green;*/
   margin: auto 1%;
 }
-main{background: url("https://placebeard.it/1600/900") no-repeat;
+main{background: url("https://placebeard.it/1600/1200") no-repeat;
   background-size: auto;
   border: 2px dashed #9799a7;
-  height: 50%;
+  height: 75rem;
   width: 100%;}
 *main{
   border: .25rem solid green;
@@ -89,38 +93,58 @@ main{background: url("https://placebeard.it/1600/900") no-repeat;
   /*border: .25rem black solid;*/
   background-color: black;
   color: white;
-  width: 30%;
-  height: auto;
+  width: 18rem;
+  height: 20rem;
   margin: 10% 0 0 0;
-  padding: 4%;
-}
+  padding-left: 1rem;
+position: absolute;top: 42rem;}
 .bookButton{
   background-color: rgb(0, 0, 0);
-  color:rgb(250, 246, 246);
+  color:
+  rgb(250, 246, 246);
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-around;
-  padding: 3%;
+  /* padding: 3%; */
+  height: 12%;
 }
 #firstVisit a{
   background-color: white;
   color: black;
   margin: 8% 23% 10% 0;
+  position: relative;
+  top: 12rem;
 
-}
+left: 2rem;}
+#firstSpan{
+  position:absolute;
+  top: 3rem;
+left: 2rem;}
+#discount{
+  position: absolute;
+  top: 5rem;
+left: 1rem;}
+#twentyOff{
+  font-size: 2.5rem;
+font-weight: bolder;}
+#classicHair{
+  position: relative;
+  top: 11rem;
+left: 1.25rem;}
+
 #hours{
   color: white;
   border: .25rem black solid;
   align-self:flex-end;
   transform: rotate(90deg);
-}
+position: absolute;right: -3rem;top: 35rem;}
 #mainServices{
   border: .25rem black solid;
   background-color: black;
   color: white;
   padding:1%;
-}
-main h1,h3,footer{  border: .25rem black solid;
+position: absolute;top: 43rem;}
+main h1,h3,footer{  /* border: .25rem black solid; */
 }
 #bNH{
   color: aliceblue;
@@ -129,7 +153,7 @@ main h1,h3,footer{  border: .25rem black solid;
 
   
 
-}
+position: absolute;top: 20rem;}
 .homeHead1{
   margin: 0 auto;
 }
@@ -137,7 +161,7 @@ main h1,h3,footer{  border: .25rem black solid;
   color:white;
   font-size:1rem;
   margin-bottom: 4%
-}
+;position: absolute;top: 35rem;}
 .bighome{
   margin:;
 }
@@ -163,7 +187,7 @@ main h1,h3,footer{  border: .25rem black solid;
 /* LAYOUT
 /*******************************************/
 header {
-
+  width: 80%;
 }
 
 footer {
@@ -171,19 +195,50 @@ footer {
 }
 #adMidPage{
   
-  background: url("https://placebeard.it/200/400") no-repeat;
-  background-position: right;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  background-color: #dddff6b5;
-  background-blend-mode: color-dodge;
+/* right: -42px; */
+  
+/* background-position-x: 15rem; */
+  
+background: url("https://placebeard.it/400/400") no-repeat;
+  
+background-position: 86% 50%;
+  
+display: flex;
+  
+background-color: #dddff6b5;
+  
+background-blend-mode: color-dodge;
   background
-  width: 100%;
-  height: 30rem;
+;
+  
+width: 95%;
+  
+height: 25rem;
+  
+margin: 0,0;
+  
+flex-direction: column;
 }
+#midPageSpan{
+  position: relative;
+  top: 3rem;
+  left: 10rem;
+  font-size: 2rem;
+}
+#midPageH2{
+  position: relative;
+  top: 6rem;
+  left: 10rem;
+  font-size: 2rem;
+  width: 27%;
+}
+#midPageButton{
+  position: relative;
+  top: 10rem;
+  left: 9rem;
+  max-width: 17rem;
+  padding: 1%;
+  }
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -208,36 +263,78 @@ footer {
 }
 .stylist img{
   display: inline-block;
+  border: white solid 1rem;
 }
 .namePlate{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   background-color: black;
   color: white;
-  padding: 4% ;
-  width: 90%;
+  padding: 0 0 5%;
+  /* width: 90%; */
+  display: flex;
+  flex-direction: column;
+  width: 58%;
+  position: relative;
+  top: -3rem;
+  align-items: center;
+}
+#lookBook img{
+  /* float:
+  left; */
+}
+.lookBookSquare{
+  /* height: 25%; */
+  /* width: 25%; */
+  /* float: left; */
+  /* position: relative; */
+  /* top: -12rem; */
+  /* left: 0rem; */
+  /* margin-top: 4%; */
+  /* margin-bottom: 0rem; */
+  border: #ff000000 1rem solid;
+}
+.lookBookLong{
+  /* height: 49%; */
+  /* width: 20%; */
+  /* position: relative; */
+  /* margin-top: 12%; */
+  /* top: 12rem; */
+  /* left: -6rem; */
+  /* margin: 5% 5% 5% 5%; */
+  /* float: left; */
+  border: 1rem white solid;
+}
+footer>h3{
+  text-align: center;
+  font-size: 2rem;
+}
+.mainSwipe{
+  position: relative;
+  top: 68rem;
+  left: 64rem;
+}
+#lookBook{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#ColumnOne{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-evenly;
+  /* height: 1000px; */
+  /* width: 258px; */
+  border: red 0rem solid;
+}
+
+section#ColumnOne {}
+#columnTwo{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#lookBook img{
-  float:left
-
-}
-.lookBookSquare{
-  height: 25%;
-  width: auto;
-}
-.lookBookLong{
-  height: 75%;
-  width: auto;
-}
-footer>h3{
-  text-align: center;
-  font-weight: 3rem;
-
-}
-.mainSwipe{
-  position: relative;
-  top:90%;
-  left: 90%;
+#columnThree{
+  display: flex;
+  flex-direction: column;
 }
