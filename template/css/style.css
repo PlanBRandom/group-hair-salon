@@ -175,6 +175,15 @@ position: absolute;top: 20rem;}
 .service{
   margin:0 10%
 }
+.service h3{
+  font-size: 3rem;
+}
+.service img{
+border-radius: 50%;
+}
+.service p{
+  font-size: 2rem;
+}
 #MakeMoves{
   display: flex;
   justify-content: space-between;
@@ -182,6 +191,21 @@ position: absolute;top: 20rem;}
   align-items: center;
   padding: 2% 10%;
   
+}
+.momentum h2{
+font-size: 2rem;
+width:80%
+}
+.momentum p{
+  font-size: .5rem;
+}
+.momentum a{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  bottom: 2rem;
+  width: 60%;
 }
   /******************************************
 /* LAYOUT
